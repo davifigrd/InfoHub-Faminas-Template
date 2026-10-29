@@ -46,5 +46,42 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  console.log('[InfoHub Setorial] Página de Recuperação de Acesso Institucional inicializada com sucesso.');
+  // Botão "Copiar E-mail do Setor" (ead.mre@faminas.edu.br)
+  const btnCopiarEmail = document.getElementById('btn-copiar-email');
+  const textoCopiarEmail = document.getElementById('texto-copiar-email');
+  const emailSetor = 'ead.mre@faminas.edu.br';
+
+  if (btnCopiarEmail) {
+    btnCopiarEmail.addEventListener('click', async () => {
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(emailSetor);
+        } else {
+          const textarea = document.createElement('textarea');
+          textarea.value = emailSetor;
+          textarea.style.position = 'fixed';
+          textarea.style.opacity = '0';
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+        }
+
+        if (textoCopiarEmail) {
+          const textoOriginal = textoCopiarEmail.textContent;
+          textoCopiarEmail.textContent = '✓ Copiado!';
+          btnCopiarEmail.setAttribute('aria-label', 'E-mail do setor copiado');
+
+          setTimeout(() => {
+            textoCopiarEmail.textContent = textoOriginal;
+            btnCopiarEmail.setAttribute('aria-label', 'Copiar e-mail oficial do setor');
+          }, 2000);
+        }
+      } catch (error) {
+        console.error('[InfoHub Setorial] Erro ao copiar e-mail do setor:', error);
+      }
+    });
+  }
+
+  console.log('[InfoHub Setorial] Página do setor Faminas Virtual inicializada com sucesso.');
 });

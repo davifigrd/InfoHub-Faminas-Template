@@ -1,110 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Recuperação de Acesso Institucional — InfoHub FAMINAS</title>
-  <meta name="description"
-    content="Orientações para redefinição de senhas do Portal do Aluno, E-mail Google Workspace @faminas.edu.br, Moodle e Carteirinha Digital. Canais de autoatendimento e atendimento presencial da FAMINAS." />
+    <title>
+      Faminas Virtual — Recuperação de Acesso Institucional | InfoHub FAMINAS
+    </title>
+    <meta
+      name="description"
+      content="Setor responsável: Faminas Virtual. Orientações para redefinição de senhas do Portal do Aluno, E-mail @aluno.faminas.edu.br, Moodle e Carteirinha Digital. Atendimento de segunda a sexta, das 08h às 21h, pelo e-mail ead.mre@faminas.edu.br, WhatsApp (32) 3729-7501 ou presencialmente na CAA, ao lado do Bloco A."
+    />
 
-  <link rel="icon" type="image/png" href="./assets/images/logo-faminas.png" />
+    <link rel="icon" type="image/png" href="./assets/images/logo-faminas.png" />
 
-  <!-- Google Fonts & Material Symbols Oficiais FAMINAS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Red+Hat+Display:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    rel="stylesheet" />
+    <!-- Google Fonts & Material Symbols Oficiais FAMINAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Red+Hat+Display:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
 
-  <!-- Folhas de Estilo Institucionais (NÃO ALTERAR) -->
-  <link rel="stylesheet" href="./css/variables.css" />
-  <link rel="stylesheet" href="./css/base.css" />
-  <link rel="stylesheet" href="./css/layout.css" />
-  <link rel="stylesheet" href="./css/modais.css" />
+    <!-- Folhas de Estilo Institucionais (NÃO ALTERAR) -->
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/modais.css" />
 
-  <!-- Folha de Estilo Customizada dos Estudantes (LIVRE PARA EDIÇÃO) -->
-  <link rel="stylesheet" href="./css/custom.css" />
-</head>
+    <!-- Folha de Estilo Customizada dos Estudantes (LIVRE PARA EDIÇÃO) -->
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
 
-<body>
-  <!-- ====================================================================
+  <body>
+    <!-- ====================================================================
        CABEÇALHO INSTITUCIONAL OFICIAL (NÃO ALTERAR)
        O botão de ação direciona o discente de volta ao InfoHub principal.
        ==================================================================== -->
-  <header id="main-header" class="site-header">
-    <div class="header-container container">
-      <div class="brand-wrapper">
-        <a href="https://infohub-faminas.vercel.app" class="brand-link" aria-label="InfoHub FAMINAS - Página Inicial">
-          <img src="./assets/images/logo-faminas.png" alt="Logomarca Oficial FAMINAS" class="brand-logo" />
-        </a>
-        <div class="brand-divider" aria-hidden="true"></div>
-        <div class="brand-meta">
-          <span class="brand-title">InfoHub FAMINAS</span>
-          <span class="brand-subtitle">Extensão Acadêmica • ADS</span>
+    <header id="main-header" class="site-header">
+      <div class="header-container container">
+        <div class="brand-wrapper">
+          <a
+            href="https://infohub-faminas.vercel.app"
+            class="brand-link"
+            aria-label="InfoHub FAMINAS - Página Inicial"
+          >
+            <img
+              src="./assets/images/logo-faminas.png"
+              alt="Logomarca Oficial FAMINAS"
+              class="brand-logo"
+            />
+          </a>
+          <div class="brand-divider" aria-hidden="true"></div>
+          <div class="brand-meta">
+            <span class="brand-title">InfoHub FAMINAS</span>
+            <span class="brand-subtitle">Extensão Acadêmica • ADS</span>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <!-- Botão oficial de retorno ao Hub Principal -->
+          <a
+            href="https://infohub-faminas.vercel.app"
+            class="btn btn-primary-highlight btn-portal"
+            id="link-retornar-hub"
+            aria-label="Retornar à página inicial do InfoHub FAMINAS"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true"
+              >arrow_back</span
+            >
+            <span>Retornar ao InfoHub</span>
+          </a>
         </div>
       </div>
+    </header>
 
-      <div class="header-actions">
-        <!-- Botão oficial de retorno ao Hub Principal -->
-        <a 
-          href="https://infohub-faminas.vercel.app" 
-          class="btn btn-primary-highlight btn-portal" 
-          id="link-retornar-hub"
-          aria-label="Retornar à página inicial do InfoHub FAMINAS"
-        >
-          <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
-          <span>Retornar ao InfoHub</span>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Área Principal da Solução Setorial -->
-  <main id="main-content">
-    <!-- ====================================================================
+    <!-- Área Principal da Solução Setorial -->
+    <main id="main-content">
+      <!-- ====================================================================
          SEÇÃO HERO INSTITUCIONAL
          ESTUDANTES: Ajuste APENAS o Título do Setor e a Descrição do Setor.
-         As tags institucionais e badges não devem ser removidas.
+         Os badges institucionais não devem ser removidos.
          ==================================================================== -->
-    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
-      <div class="hero-content container">
-        <div class="hero-tag">
-          <span class="material-symbols-outlined" aria-hidden="true">school</span>
-          Engenharia de Software • ADS FAMINAS
+      <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+        <div class="hero-content container">
+          <!-- [EDITÁVEL]: Nome do Setor -->
+          <h1 id="hero-heading" class="hero-title">
+            Faminas Virtual<br />
+            <span>Recuperação de Acesso</span>
+          </h1>
+
+          <!-- [EDITÁVEL]: Descrição e Propósito do Setor apurados na entrevista -->
+          <p class="hero-description">
+            O setor <strong>Faminas Virtual</strong> é o responsável pelo
+            suporte e pela recuperação de acesso aos sistemas institucionais. Se
+            você esqueceu sua senha ou perdeu o acesso, este canal orienta o
+            passo a passo para recuperar seu acesso ao Portal do Aluno, ao
+            E-mail Institucional (@aluno.faminas.edu.br), ao Moodle e à
+            Carteirinha Digital.
+          </p>
+
+          <div
+            class="hero-badges-group"
+            aria-label="Informações do autoatendimento"
+          >
+            <div class="hero-badge-item">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >verified</span
+              >
+              <span>Processos Homologados</span>
+            </div>
+            <div class="hero-badge-item">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >support_agent</span
+              >
+              <span>Autoatendimento Discente</span>
+            </div>
+            <div class="hero-badge-item">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >schedule</span
+              >
+              <span>Seg a Sex • 08h às 21h</span>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <!-- [EDITÁVEL]: Nome do Setor -->
-        <h1 id="hero-heading" class="hero-title">
-          Recuperação de <span>Acesso Institucional</span>
-        </h1>
-
-        <!-- [EDITÁVEL]: Descrição e Propósito do Setor apurados na entrevista -->
-        <p class="hero-description">
-          Se você esqueceu sua senha ou perdeu o acesso aos sistemas da faculdade, este canal orienta o passo a passo para recuperar seu acesso ao Portal do Aluno, ao E-mail Google Workspace (@faminas.edu.br), ao Moodle e à Carteirinha Digital.
-        </p>
-
-        <div class="hero-badges-group" aria-label="Informações do autoatendimento">
-          <div class="hero-badge-item">
-            <span class="material-symbols-outlined" aria-hidden="true">verified</span>
-            <span>Processos Homologados</span>
-          </div>
-          <div class="hero-badge-item">
-            <span class="material-symbols-outlined" aria-hidden="true">support_agent</span>
-            <span>Autoatendimento Discente</span>
-          </div>
-          <div class="hero-badge-item">
-            <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
-            <span>Disponível</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ====================================================================
+      <!-- ====================================================================
          ÁREA CENTRAL LIVRE PARA OS ESTUDANTES (FEATURES DO SETOR)
          Vocês têm total liberdade para estruturar esta área central conforme
          os requisitos, fluxos e necessidades identificados nas entrevistas.
@@ -112,257 +138,629 @@
          REQUISITO: Utilize HTML5 semântico (section, article, div, ul, details).
          Para criar estilos novos, edite o arquivo "css/custom.css".
          ==================================================================== -->
-    <section id="features" class="sector-content-section" aria-labelledby="sector-content-heading">
-      <div class="container">
-        
-        <!-- Cabeçalho da Seção Central -->
-        <div class="sector-section-header">
-          <div class="sector-section-tag">
-            <span class="material-symbols-outlined" aria-hidden="true">lock_reset</span>
-            <span>Recuperação de Acesso Institucional</span>
+      <section
+        id="features"
+        class="sector-content-section"
+        aria-labelledby="sector-content-heading"
+      >
+        <div class="container">
+          <!-- Cabeçalho da Seção Central -->
+          <div class="sector-section-header">
+            <div class="sector-section-tag">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >lock_reset</span
+              >
+              <span>Faminas Virtual • Recuperação de Acesso Institucional</span>
+            </div>
+            <h2 id="sector-content-heading" class="sector-section-title">
+              Como Podemos Ajudar Você Hoje?
+            </h2>
+            <p class="sector-section-subtitle">
+              A equipe Faminas Virtual orienta você a recuperar o acesso aos
+              principais sistemas da FAMINAS de forma rápida e segura, com
+              atendimento de segunda a sexta, das 08h às 21h.
+            </p>
           </div>
-          <h2 id="sector-content-heading" class="sector-section-title">
-            Como Podemos Ajudar Você Hoje?
-          </h2>
-          <p class="sector-section-subtitle">
-            Orientações para recuperar o acesso aos principais sistemas da FAMINAS de forma rápida e segura.
-          </p>
-        </div>
 
-        <!-- Sistemas Suportados -->
-        <section class="setor-sistemas" aria-labelledby="sistemas-heading">
-          <h3 id="sistemas-heading" class="setor-subtitulo">Sistemas Suportados</h3>
-          <article>
-            <div class="sector-grid setor-sistemas-grid">
-              <article class="sector-card setor-sistema-card">
-                <div class="sector-card-icon" aria-hidden="true">
-                  <span class="material-symbols-outlined">account_circle</span>
+          <!-- Sistemas Suportados -->
+          <section class="setor-sistemas" aria-labelledby="sistemas-heading">
+            <h3 id="sistemas-heading" class="setor-subtitulo">
+              Sistemas Suportados
+            </h3>
+            <article>
+              <div class="sector-grid setor-sistemas-grid">
+                <article class="sector-card setor-sistema-card">
+                  <div class="sector-card-icon" aria-hidden="true">
+                    <span class="material-symbols-outlined"
+                      >account_circle</span
+                    >
+                  </div>
+                  <h4 class="sector-card-title">
+                    <a
+                      class="link-sistema"
+                      href="https://portal.faminas.edu.br/FrameHTML/web/app/edu/PortalEducacional/login/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Portal do Aluno</a
+                    >
+                  </h4>
+                  <p class="sector-card-text">
+                    Acesso a boletos, notas, histórico, requerimentos e
+                    informações acadêmicas.
+                  </p>
+                </article>
+
+                <article class="sector-card setor-sistema-card">
+                  <div class="sector-card-icon" aria-hidden="true">
+                    <span class="material-symbols-outlined">mail</span>
+                  </div>
+                  <h4 class="sector-card-title">E-mail Institucional</h4>
+                  <p class="sector-card-text">
+                    Conta institucional
+                    <strong>@aluno.faminas.edu.br</strong> para comunicações
+                    oficiais.
+                  </p>
+                </article>
+
+                <article class="sector-card setor-sistema-card">
+                  <div class="sector-card-icon" aria-hidden="true">
+                    <span class="material-symbols-outlined">badge</span>
+                  </div>
+                  <h4 class="sector-card-title">Carteirinha Digital</h4>
+                  <p class="sector-card-text">
+                    Identificação estudantil digital para acesso e serviços no
+                    campus.
+                  </p>
+                </article>
+
+                <article class="sector-card setor-sistema-card">
+                  <div class="sector-card-icon" aria-hidden="true">
+                    <span class="material-symbols-outlined">school</span>
+                  </div>
+                  <h4 class="sector-card-title">
+                    <a
+                      class="link-sistema"
+                      href="https://ead.faminas.edu.br/login"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Moodle/ Faminas Virtual</a
+                    >
+                  </h4>
+                  <p class="sector-card-text">
+                    Ambiente virtual de aprendizagem utilizado em diversas
+                    disciplinas.
+                  </p>
+                </article>
+              </div>
+            </article>
+          </section>
+
+          <!-- Fluxo / Passo a Passo -->
+          <section
+            id="fluxo"
+            class="setor-fluxo"
+            aria-labelledby="fluxo-heading"
+            style="
+              margin-top: 3rem;
+              background: var(--color-bg-card);
+              padding: 2rem;
+              border-radius: var(--radius-lg);
+              border: 1px solid var(--color-border);
+            "
+          >
+            <h3
+              id="fluxo-heading"
+              style="
+                font-size: 1.35rem;
+                color: var(--color-primary-navy);
+                margin-bottom: 0.5rem;
+              "
+            >
+              Passo a Passo para Recuperação de Acesso
+            </h3>
+            <p
+              style="
+                color: var(--color-text-muted);
+                font-size: 0.95rem;
+                margin-bottom: 1.5rem;
+              "
+            >
+              Caso tenha esquecido sua senha ou perdido o acesso, siga uma das
+              opções abaixo:
+            </p>
+
+            <ol class="process-steps-list">
+              <li class="process-step-item">
+                <span class="step-number">1</span>
+                <div class="step-content">
+                  <strong>Autoatendimento</strong>
+                  <p>
+                    Na tela de login do
+                    <a
+                      class="link-sistema"
+                      href="https://portal.faminas.edu.br/FrameHTML/web/app/edu/PortalEducacional/login/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Portal do Aluno</a
+                    >, tente a opção: <strong>"Esqueci minha senha"</strong>.
+                  </p>
                 </div>
-                <h4 class="sector-card-title">Portal do Aluno</h4>
-                <p class="sector-card-text">Acesso a boletos, notas, histórico, requerimentos e informações acadêmicas.</p>
-              </article>
-
-              <article class="sector-card setor-sistema-card">
-                <div class="sector-card-icon" aria-hidden="true">
-                  <span class="material-symbols-outlined">mail</span>
+              </li>
+              <li class="process-step-item">
+                <span class="step-number">2</span>
+                <div class="step-content">
+                  <strong>Atendimento remoto pelos canais oficiais</strong>
+                  <p>
+                    Se não conseguir pelo autoatendimento, entre em contato pelo
+                    WhatsApp Suporte (32) 3729-7501 ou pelo
+                    e-mail <strong>ead.mre@faminas.edu.br</strong>. Para o
+                    atendimento, informe:
+                  </p>
+                  <ul class="step-checklist">
+                    <li><strong>Matrícula</strong></li>
+                    <li>
+                      <strong>E-mail institucional:</strong>
+                      @aluno.faminas.edu.br
+                    </li>
+                  </ul>
                 </div>
-                <h4 class="sector-card-title">E-mail Google Workspace</h4>
-                <p class="sector-card-text">Conta institucional <strong>@faminas.edu.br</strong> para comunicações oficiais.</p>
-              </article>
+              </li>
+              <li class="process-step-item">
+                <span class="step-number">3</span>
+                <div class="step-content">
+                  <strong>Atendimento presencial na CAA</strong>
+                  <p>
+                    Na impossibilidade dos canais anteriores, dirija-se à
+                    <strong>CAA (Central de Atendimento ao Aluno)</strong>, ao
+                    lado do Bloco A. Para o atendimento, informe:
+                  </p>
+                  <ul class="step-checklist">
+                    <li><strong>Matrícula</strong></li>
+                    <li>
+                      <strong>E-mail institucional:</strong>
+                      @aluno.faminas.edu.br
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ol>
+          </section>
 
-              <article class="sector-card setor-sistema-card">
-                <div class="sector-card-icon" aria-hidden="true">
+          <!-- Card de Informações do Setor -->
+          <section
+            class="setor-info"
+            aria-labelledby="info-heading"
+            style="margin-top: 2.5rem"
+          >
+            <h3 id="info-heading" class="setor-subtitulo">
+              Informações do Setor
+            </h3>
+            <article class="setor-info-card">
+              <div class="setor-info-grid">
+                <div class="setor-info-item">
+                  <span
+                    class="material-symbols-outlined setor-info-icon"
+                    aria-hidden="true"
+                    >apartment</span
+                  >
+                  <div class="setor-info-content">
+                    <strong>Setor Responsável</strong>
+                    <p>Faminas Virtual</p>
+                  </div>
+                </div>
+                <div class="setor-info-item">
+                  <span
+                    class="material-symbols-outlined setor-info-icon"
+                    aria-hidden="true"
+                    >schedule</span
+                  >
+                  <div class="setor-info-content">
+                    <strong>Horário de Atendimento</strong>
+                    <p>Segunda a sexta, das 08h às 21h</p>
+                  </div>
+                </div>
+                <div class="setor-info-item">
+                  <span
+                    class="material-symbols-outlined setor-info-icon"
+                    aria-hidden="true"
+                    >mail</span
+                  >
+                  <div class="setor-info-content">
+                    <strong>E-mail do Setor</strong>
+                    <p>
+                      <a
+                        class="email-oficial"
+                        href="mailto:ead.mre@faminas.edu.br"
+                        >ead.mre@faminas.edu.br</a
+                      >
+                    </p>
+                    <button
+                      type="button"
+                      id="btn-copiar-email"
+                      class="btn btn-primary-highlight btn-copiar-email"
+                      aria-label="Copiar e-mail oficial do setor"
+                    >
+                      <span
+                        class="material-symbols-outlined"
+                        aria-hidden="true"
+                        >content_copy</span
+                      >
+                      <span id="texto-copiar-email"
+                        >Copiar E-mail</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="setor-info-item">
+                  <svg
+                    class="setor-info-icon svg-icon-whatsapp"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                    />
+                  </svg>
+                  <div class="setor-info-content">
+                    <strong>WhatsApp Suporte</strong>
+                    <p>(32) 3729-7501</p>
+                    <button
+                      type="button"
+                      id="btn-copiar-whatsapp"
+                      class="btn btn-primary-highlight btn-copiar-whatsapp"
+                      aria-label="Copiar número do WhatsApp do suporte"
+                    >
+                      <span
+                        class="material-symbols-outlined"
+                        aria-hidden="true"
+                        >content_copy</span
+                      >
+                      <span id="texto-copiar-whatsapp"
+                        >Copiar Número</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="setor-info-item">
+                  <span
+                    class="material-symbols-outlined setor-info-icon"
+                    aria-hidden="true"
+                    >location_on</span
+                  >
+                  <div class="setor-info-content">
+                    <strong>Localização Presencial</strong>
+                    <p>
+                      CAA (Central de Atendimento ao Aluno), ao lado do Bloco A.
+                    </p>
+                  </div>
+                </div>
+                <div class="setor-info-item">
+                  <span
+                    class="material-symbols-outlined setor-info-icon"
+                    aria-hidden="true"
+                    >map</span
+                  >
+                  <div class="setor-info-content">
+                    <strong>Endereço do Campus</strong>
+                    <p>
+                      Av. Cristiano Ferreira Varella, 655 - Bairro
+                      Universitário, Muriaé - MG
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <!-- Documentos Necessários e Prazo de Tratativa -->
+          <section
+            class="setor-requisitos"
+            aria-labelledby="requisitos-heading"
+            style="margin-top: 2.5rem"
+          >
+            <h3 id="requisitos-heading" class="setor-subtitulo">
+              Documentos Necessários e Prazo
+            </h3>
+            <div class="setor-requisitos-grid">
+              <article class="setor-requisito-card">
+                <div class="setor-requisito-icon" aria-hidden="true">
                   <span class="material-symbols-outlined">badge</span>
                 </div>
-                <h4 class="sector-card-title">Carteirinha Digital</h4>
-                <p class="sector-card-text">Identificação estudantil digital para acesso e serviços no campus.</p>
+                <h4>Documentos Necessários</h4>
+                <p>
+                  Para o atendimento, o aluno deve informar sua
+                  <strong>Matrícula</strong> e seu
+                  <strong>E-mail institucional</strong> (@aluno.faminas.edu.br).
+                  Esses dados são essenciais para que a tratativa imediata seja
+                  realizada.
+                </p>
               </article>
-
-              <article class="sector-card setor-sistema-card">
-                <div class="sector-card-icon" aria-hidden="true">
-                  <span class="material-symbols-outlined">school</span>
+              <article class="setor-requisito-card">
+                <div class="setor-requisito-icon" aria-hidden="true">
+                  <span class="material-symbols-outlined">bolt</span>
                 </div>
-                <h4 class="sector-card-title">Moodle</h4>
-                <p class="sector-card-text">Ambiente virtual de aprendizagem utilizado em diversas disciplinas.</p>
+                <h4>Prazo de Atendimento</h4>
+                <p>
+                  A solicitação é
+                  <strong>encaminhada para tratativa imediata</strong> assim que
+                  o aluno entra em contato pelos canais oficiais.
+                </p>
               </article>
             </div>
-          </article>
-        </section>
+          </section>
 
-        <!-- Fluxo / Passo a Passo -->
-        <section id="fluxo" class="setor-fluxo" aria-labelledby="fluxo-heading" style="margin-top: 3rem; background: var(--color-bg-card); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
-          <h3 id="fluxo-heading" style="font-size: 1.35rem; color: var(--color-primary-navy); margin-bottom: 0.5rem;">
-            Passo a Passo para Recuperação de Acesso
-          </h3>
-          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
-            Caso tenha esquecido sua senha ou perdido o acesso, siga uma das opções abaixo:
-          </p>
-
-          <ol class="process-steps-list">
-            <li class="process-step-item">
-              <span class="step-number">1</span>
-              <div class="step-content">
-                <strong>Autoatendimento via "Esqueci minha senha"</strong>
-                <p>Tente primeiro a opção <strong>"Esqueci minha senha"</strong> na tela de login do Portal do Aluno (ou do sistema que precisa acessar).</p>
-              </div>
-            </li>
-            <li class="process-step-item">
-              <span class="step-number">2</span>
-              <div class="step-content">
-                <strong>Atendimento remoto via WhatsApp oficial</strong>
-                <p>Se não conseguir pelo autoatendimento, entre em contato pelo WhatsApp oficial: <strong>+55 32 3729-7501</strong>.</p>
-              </div>
-            </li>
-            <li class="process-step-item">
-              <span class="step-number">3</span>
-              <div class="step-content">
-                <strong>Atendimento presencial na CAA</strong>
-                <p>Na impossibilidade dos canais anteriores, dirija-se à <strong>CAA (Central de Atendimento ao Aluno)</strong> — Ao lado do Bloco A.</p>
-              </div>
-            </li>
-          </ol>
-        </section>
-
-        <!-- Card de Informações do Setor -->
-        <section class="setor-info" aria-labelledby="info-heading" style="margin-top: 2.5rem;">
-          <h3 id="info-heading" class="setor-subtitulo">Informações do Setor</h3>
-          <article class="setor-info-card">
-            <div class="setor-info-grid">
-              <div class="setor-info-item">
-                <span class="material-symbols-outlined setor-info-icon" aria-hidden="true">location_on</span>
-                <div class="setor-info-content">
-                  <strong>Endereço</strong>
-                  <p>Av. Cristiano Ferreira Varella, 655 - Bairro Universitário, Muriaé - MG</p>
+          <!-- Perguntas Frequentes (FAQ) -->
+          <section style="margin-top: 3rem" aria-labelledby="faq-heading">
+            <h3
+              id="faq-heading"
+              style="
+                font-size: 1.35rem;
+                color: var(--color-primary-navy);
+                margin-bottom: 1rem;
+              "
+            >
+              Perguntas Frequentes
+            </h3>
+            <div class="faq-accordion">
+              <details class="faq-item">
+                <summary class="faq-summary">
+                  <span
+                    >Não consigo acessar o e-mail institucional
+                    (@aluno.faminas.edu.br). O que fazer?</span
+                  >
+                  <span class="material-symbols-outlined" aria-hidden="true"
+                    >expand_more</span
+                  >
+                </summary>
+                <div class="faq-content">
+                  Tente a opção "Esqueci minha senha" no portal de acesso. Caso
+                  não funcione, entre em contato pelo WhatsApp Suporte (32)
+                  3729-7501 ou pelo e-mail ead.mre@faminas.edu.br. Você também
+                  pode se dirigir à CAA (Central de Atendimento ao Aluno), ao
+                  lado do Bloco A. O atendimento ocorre de segunda a sexta, das
+                  08h às 21h.
                 </div>
-              </div>
-              <div class="setor-info-item">
-                <span class="material-symbols-outlined setor-info-icon" aria-hidden="true">chat</span>
-                <div class="setor-info-content">
-                  <strong>Canal do WhatsApp</strong>
-                  <p>+55 32 3729-7501</p>
-                  <button type="button" id="btn-copiar-whatsapp" class="btn btn-primary-highlight btn-copiar-whatsapp" aria-label="Copiar número do WhatsApp do suporte">
-                    <span class="material-symbols-outlined" aria-hidden="true">content_copy</span>
-                    <span id="texto-copiar-whatsapp">Copiar WhatsApp do Suporte</span>
-                  </button>
+              </details>
+              <details class="faq-item">
+                <summary class="faq-summary">
+                  <span
+                    >Esqueci a senha do Portal do Aluno. Como recuperar?</span
+                  >
+                  <span class="material-symbols-outlined" aria-hidden="true"
+                    >expand_more</span
+                  >
+                </summary>
+                <div class="faq-content">
+                  Utilize "Esqueci minha senha" na tela de login do Portal do
+                  Aluno. Se não receber o e-mail ou não conseguir redefinir,
+                  solicite apoio pelos canais oficiais (WhatsApp, e-mail
+                  ead.mre@faminas.edu.br ou CAA), informando sua Matrícula e seu
+                  e-mail institucional.
                 </div>
-              </div>
+              </details>
+              <details class="faq-item">
+                <summary class="faq-summary">
+                  <span
+                    >Perdi o acesso à Carteirinha Digital. Onde resolvo?</span
+                  >
+                  <span class="material-symbols-outlined" aria-hidden="true"
+                    >expand_more</span
+                  >
+                </summary>
+                <div class="faq-content">
+                  Para recuperação de acesso à Carteirinha Digital, siga o mesmo
+                  fluxo: autoatendimento ("Esqueci minha senha") ou atendimento
+                  via WhatsApp, e-mail ead.mre@faminas.edu.br ou CAA para
+                  orientação específica.
+                </div>
+              </details>
+              <details class="faq-item">
+                <summary class="faq-summary">
+                  <span>Quais dados preciso informar para ser atendido?</span>
+                  <span class="material-symbols-outlined" aria-hidden="true"
+                    >expand_more</span
+                  >
+                </summary>
+                <div class="faq-content">
+                  Informe sua <strong>Matrícula</strong> e seu
+                  <strong>E-mail institucional</strong> (@aluno.faminas.edu.br).
+                  Esses dados são necessários para que a tratativa imediata da
+                  sua solicitação seja realizada pela equipe Faminas Virtual.
+                </div>
+              </details>
+              <details class="faq-item">
+                <summary class="faq-summary">
+                  <span>Qual é o prazo para a tratativa da solicitação?</span>
+                  <span class="material-symbols-outlined" aria-hidden="true"
+                    >expand_more</span
+                  >
+                </summary>
+                <div class="faq-content">
+                  Assim que o aluno entra em contato pelos canais oficiais, a
+                  solicitação é encaminhada para
+                  <strong>tratativa imediata</strong> pela equipe Faminas
+                  Virtual.
+                </div>
+              </details>
+              <details class="faq-item">
+                <summary class="faq-summary">
+                  <span>Qual o horário de atendimento do setor?</span>
+                  <span class="material-symbols-outlined" aria-hidden="true"
+                    >expand_more</span
+                  >
+                </summary>
+                <div class="faq-content">
+                  O atendimento da Faminas Virtual ocorre de
+                  <strong>segunda a sexta, das 08h às 21h</strong>, pelos canais
+                  remotos e presencialmente na CAA, ao lado do Bloco A.
+                </div>
+              </details>
+              <details class="faq-item">
+                <summary class="faq-summary">
+                  <span
+                    >Qual o endereço da CAA para atendimento presencial?</span
+                  >
+                  <span class="material-symbols-outlined" aria-hidden="true"
+                    >expand_more</span
+                  >
+                </summary>
+                <div class="faq-content">
+                  A CAA (Central de Atendimento ao Aluno) fica ao lado do Bloco
+                  A, no campus da FAMINAS: Av. Cristiano Ferreira Varella, 655 -
+                  Bairro Universitário, Muriaé - MG.
+                </div>
+              </details>
             </div>
-          </article>
-        </section>
+          </section>
 
-        <!-- Perguntas Frequentes (FAQ) -->
-        <section style="margin-top: 3rem;" aria-labelledby="faq-heading">
-          <h3 id="faq-heading" style="font-size: 1.35rem; color: var(--color-primary-navy); margin-bottom: 1rem;">
-            Perguntas Frequentes
-          </h3>
-          <div class="faq-accordion">
-            <details class="faq-item">
-              <summary class="faq-summary">
-                <span>Não consigo acessar o e-mail institucional (@faminas.edu.br). O que fazer?</span>
-                <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
-              </summary>
-              <div class="faq-content">
-                Tente a opção "Esqueci minha senha" no portal de acesso. Caso não funcione, entre em contato pelo WhatsApp oficial (+55 32 3729-7501) ou dirija-se à CAA (Central de Atendimento ao Aluno) ao lado do Bloco C.
-              </div>
-            </details>
-            <details class="faq-item">
-              <summary class="faq-summary">
-                <span>Esqueci a senha do Portal do Aluno. Como recuperar?</span>
-                <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
-              </summary>
-              <div class="faq-content">
-                Utilize "Esqueci minha senha" na tela de login do Portal do Aluno. Se não receber o e-mail ou não conseguir redefinir, solicite apoio pelos canais oficiais (WhatsApp ou CAA).
-              </div>
-            </details>
-            <details class="faq-item">
-              <summary class="faq-summary">
-                <span>Perdi o acesso à Carteirinha Digital. Onde resolvo?</span>
-                <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
-              </summary>
-              <div class="faq-content">
-                Para recuperação de acesso à Carteirinha Digital, siga o mesmo fluxo: autoatendimento ("Esqueci minha senha") ou atendimento via WhatsApp/CAA para orientação específica.
-              </div>
-            </details>
-            <details class="faq-item">
-              <summary class="faq-summary">
-                <span>Qual o endereço da CAA para atendimento presencial?</span>
-                <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
-              </summary>
-              <div class="faq-content">
-                A CAA (Central de Atendimento ao Aluno) fica ao lado do Bloco C, no campus da FAMINAS: Av. Cristiano Ferreira Varella, 655 - Bairro Universitário, Muriaé - MG.
-              </div>
-            </details>
-          </div>
-        </section>
-
-        <!-- Banner de Contato Oficial -->
-        <div id="contato" class="contact-banner">
-          <div class="contact-banner-meta">
-            <h3>Precisa de Atendimento com a Equipe?</h3>
-            <p>Atendimento presencial na CAA (ao lado do Bloco C) • Muriaé - MG</p>
-          </div>
-          <div class="contact-banner-actions">
-            <a href="https://wa.me/553237297501" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">
-              <span class="material-symbols-outlined" aria-hidden="true">chat</span>
-              <span>WhatsApp Oficial</span>
-            </a>
-            <a href="tel:+553237297501" class="btn btn-primary-highlight">
-              <span class="material-symbols-outlined" aria-hidden="true">call</span>
-              <span>Ligar para o Suporte</span>
-            </a>
+          <!-- Banner de Contato Oficial -->
+          <div id="contato" class="contact-banner">
+            <div class="contact-banner-meta">
+              <h3>Precisa de Atendimento com a Equipe Faminas Virtual?</h3>
+              <p>
+                Segunda a sexta, das 08h às 21h • CAA (ao lado do Bloco A) •
+                Muriaé - MG
+              </p>
+              <p class="contact-banner-email">E-mail: ead.mre@faminas.edu.br • WhatsApp: (32) 3729-7501</p>
+            </div>
+            <div class="contact-banner-actions">
+              <a
+                href="https://wa.me/553237297501"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-light"
+              >
+                <svg
+                  class="svg-icon-whatsapp"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                  />
+                </svg>
+                <span>WhatsApp</span>
+              </a>
+              <a
+                href="mailto:ead.mre@faminas.edu.br"
+                class="btn btn-outline-light"
+              >
+                <span class="material-symbols-outlined" aria-hidden="true"
+                  >mail</span
+                >
+                <span>E-mail</span>
+              </a>
+            </div>
           </div>
         </div>
+      </section>
+    </main>
 
-      </div>
-    </section>
-  </main>
-
-  <!-- ====================================================================
+    <!-- ====================================================================
        RODAPÉ INSTITUCIONAL OFICIAL (RIGOROSAMENTE INALTERADO)
        Preserva a identidade, créditos acadêmicos de ADS e modais legais.
        ==================================================================== -->
-  <footer id="main-footer" class="site-footer">
-    <div class="footer-main">
-      <div class="footer-info">
-        <img src="./assets/images/logo-faminas.png" alt="FAMINAS" class="footer-logo" />
-        <p class="footer-text">
-          O <strong>InfoHub FAMINAS</strong> é uma iniciativa extensionista curricularizada desenvolvida pelos
-          acadêmicos do curso de <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong> na disciplina de
-          <strong>Engenharia de Software</strong>, com foco no autoatendimento, clareza processual e usabilidade para
-          toda a comunidade universitária.
-        </p>
+    <footer id="main-footer" class="site-footer">
+      <div class="footer-main">
+        <div class="footer-info">
+          <img
+            src="./assets/images/logo-faminas.png"
+            alt="FAMINAS"
+            class="footer-logo"
+          />
+          <p class="footer-text">
+            O <strong>InfoHub FAMINAS</strong> é uma iniciativa extensionista
+            curricularizada desenvolvida pelos acadêmicos do curso de
+            <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong> na
+            disciplina de <strong>Engenharia de Software</strong>, com foco no
+            autoatendimento, clareza processual e usabilidade para toda a
+            comunidade universitária.
+          </p>
 
-        <div class="footer-course-highlight">
-          <a 
-            href="https://www.unifaminas.edu.br/cursos/analise-e-desenvolvimento-de-sistemas" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="footer-course-card"
-            id="link-curso-ads"
-            aria-label="Conheça o curso de Análise e Desenvolvimento de Sistemas na UNIFAMINAS em nova janela"
-          >
-            <div class="footer-course-icon" aria-hidden="true">
-              <span class="material-symbols-outlined">school</span>
-            </div>
-            <div class="footer-course-meta">
-              <span class="footer-course-label">Curso de Graduação</span>
-              <strong class="footer-course-title">Análise e Desenvolvimento de Sistemas</strong>
-            </div>
-            <span class="material-symbols-outlined footer-course-arrow" aria-hidden="true">open_in_new</span>
-          </a>
+          <div class="footer-course-highlight">
+            <a
+              href="https://www.unifaminas.edu.br/cursos/analise-e-desenvolvimento-de-sistemas"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-course-card"
+              id="link-curso-ads"
+              aria-label="Conheça o curso de Análise e Desenvolvimento de Sistemas na UNIFAMINAS em nova janela"
+            >
+              <div class="footer-course-icon" aria-hidden="true">
+                <span class="material-symbols-outlined">school</span>
+              </div>
+              <div class="footer-course-meta">
+                <span class="footer-course-label">Curso de Graduação</span>
+                <strong class="footer-course-title"
+                  >Análise e Desenvolvimento de Sistemas</strong
+                >
+              </div>
+              <span
+                class="material-symbols-outlined footer-course-arrow"
+                aria-hidden="true"
+                >open_in_new</span
+              >
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <span class="footer-links-title">Informações Institucionais</span>
+          <nav class="footer-nav" aria-label="Links institucionais e termos">
+            <button
+              type="button"
+              class="footer-link-btn"
+              id="btn-modal-sobre"
+              data-modal="sobre"
+            >
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >info</span
+              >
+              Sobre o Projeto
+            </button>
+            <button
+              type="button"
+              class="footer-link-btn"
+              id="btn-modal-termos"
+              data-modal="termos"
+            >
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >gavel</span
+              >
+              Termos de Uso
+            </button>
+            <button
+              type="button"
+              class="footer-link-btn"
+              id="btn-modal-privacidade"
+              data-modal="privacidade"
+            >
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >security</span
+              >
+              Política de Privacidade
+            </button>
+          </nav>
         </div>
       </div>
 
-      <div class="footer-links-group">
-        <span class="footer-links-title">Informações Institucionais</span>
-        <nav class="footer-nav" aria-label="Links institucionais e termos">
-          <button type="button" class="footer-link-btn" id="btn-modal-sobre" data-modal="sobre">
-            <span class="material-symbols-outlined" aria-hidden="true">info</span>
-            Sobre o Projeto
-          </button>
-          <button type="button" class="footer-link-btn" id="btn-modal-termos" data-modal="termos">
-            <span class="material-symbols-outlined" aria-hidden="true">gavel</span>
-            Termos de Uso
-          </button>
-          <button type="button" class="footer-link-btn" id="btn-modal-privacidade" data-modal="privacidade">
-            <span class="material-symbols-outlined" aria-hidden="true">security</span>
-            Política de Privacidade
-          </button>
-        </nav>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 FAMINAS — Faculdade de Minas. Todos os direitos
+          reservados.
+        </p>
+        <p>Desenvolvido com excelência técnica e padrões Web Standards.</p>
       </div>
-    </div>
+    </footer>
 
-    <div class="footer-bottom">
-      <p>&copy; 2026 FAMINAS — Faculdade de Minas. Todos os direitos reservados.</p>
-      <p>Desenvolvido com excelência técnica e padrões Web Standards.</p>
-    </div>
-  </footer>
+    <!-- Contêiner de Modais Sobrepostos -->
+    <div id="modals-root" aria-live="polite"></div>
 
-  <!-- Contêiner de Modais Sobrepostos -->
-  <div id="modals-root" aria-live="polite"></div>
-
-  <!-- Script de Inicialização da Aplicação -->
-  <script type="module" src="./js/app.js"></script>
-</body>
-
+    <!-- Script de Inicialização da Aplicação -->
+    <script type="module" src="./js/app.js"></script>
+  </body>
 </html>
