@@ -457,3 +457,144 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* ==========================================================================
+   EQUIPE DE DESENVOLVIMENTO — CRÉDITOS DO PROJETO
+   Vitrine dos acadêmicos de ADS com atalhos para os perfis do GitHub.
+   ========================================================================== */
+.team-section {
+  padding: 3rem 0 4rem;
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--color-bg-surface) 100%);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Encosta a seção da equipe logo abaixo do banner de contato */
+#features.sector-content-section {
+  padding-bottom: 0;
+}
+
+.team-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 640px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.85rem;
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 1.25rem;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-smooth),
+    box-shadow var(--transition-smooth), border-color var(--transition-smooth);
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-cyan-faminas);
+}
+
+.team-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-blue) 0%,
+    var(--color-cyan-faminas) 100%
+  );
+  color: var(--color-text-inverse);
+  font-family: var(--font-family-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  box-shadow: 0 6px 14px rgba(0, 114, 206, 0.25);
+}
+
+.team-name {
+  font-size: 1rem;
+  color: var(--color-primary-navy);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.team-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.team-github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-primary-navy);
+  transition: all var(--transition-smooth);
+}
+
+.team-github svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
+}
+
+.team-github .material-symbols-outlined {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.team-github:hover,
+.team-github:focus-visible {
+  background-color: var(--color-primary-navy);
+  border-color: var(--color-primary-navy);
+  color: var(--color-text-inverse);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.team-linkedin:hover,
+.team-linkedin:focus-visible {
+  background-color: #0A66C2;
+  border-color: #0A66C2;
+}
+
+.team-email:hover,
+.team-email:focus-visible {
+  background-color: var(--color-primary-blue);
+  border-color: var(--color-primary-blue);
+}
+
+.team-github:focus-visible {
+  outline: 3px solid var(--color-cyan-faminas);
+  outline-offset: 2px;
+}
