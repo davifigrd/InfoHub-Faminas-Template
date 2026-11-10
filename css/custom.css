@@ -575,8 +575,8 @@
 
 .team-github:hover,
 .team-github:focus-visible {
-  background-color: var(--color-primary-navy);
-  border-color: var(--color-primary-navy);
+  background-color: var(--color-primary-blue);
+  border-color: var(--color-primary-blue);
   color: var(--color-text-inverse);
   transform: translateY(-2px);
   box-shadow: var(--shadow-sm);
